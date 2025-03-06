@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.Date;
 
 @RestController
-@ControllerAdvice // tratamento global de exceções
+@ControllerAdvice // define que é uma classe de tratamento global de exceções
 public class CustomEntityReponseHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(Exception.class) //anotação declara um bean de exceção e espera o tipo de exceção que a chamará
